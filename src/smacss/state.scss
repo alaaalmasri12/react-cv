@@ -1,0 +1,59 @@
+@import './base.scss';
+.main-navbar li::after
+{
+    position: absolute;
+        content: '';
+        height: 2px;
+        bottom: -4px; 
+        margin: 0 auto;
+	    left: 0;
+        right: 0;
+	    width: 10%;
+        transition:.5s;
+
+}
+.main-navbar li:hover::after
+{
+    width: 80%;
+    background: #ffffff;
+}
+.user-job-position h5::after
+{
+    position: absolute;
+    content: '';
+    height: 4px;
+    bottom: -10px; 
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 3%;
+    background-color: #ffffff;
+}
+.social-media ul li:nth-child(1):hover
+{
+    border: 2px solid $social-media-color-first;
+    background-color:$social-media-color-first;
+animation: spinning 0.8s ease-in;
+}
+.social-media ul li:nth-child(2):hover
+{
+    border: 2px solid $social-media-color-seconday;
+    background-color:$social-media-color-seconday;
+    animation: spinning 0.8s ease-in;
+
+}
+.social-media ul li:nth-child(3):hover
+{
+    border: 2px solid $social-media-color-third;
+    background-color:$social-media-color-third;
+    animation: spinning 0.8s ease-in;
+
+}
+@keyframes spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,64 @@
+#cv-user-section
+{
+    text-align: center;
+    margin-top: 3%;
+}
+#sidenav
+{
+    position: absolute;
+    top: 30%;
+    height: 130px;
+    width: 16%;
+    background-color: #ffffff;
+    display: none;
+    border:1px solid green;
+    transition: 0.3s ease;
+}
+.sidenav-expand
+{
+    display: block !important;
+    width: 250px;
+}
+.sidenav-expand-left {
+    margin-left: 16%;
+}
+.red {
+    border: 1px solid red;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+input[type=checkbox], input[type=radio] {
+    border: none !important;
+    box-sizing: border-box;
+    opacity: 0;
+    width: 30px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.pruple
+{ border: 1px solid #8e45ae;
+    width: 30px;
+    height: 30px;
+    background-color: #8e45ae;
+    
+}
+.skyblue
+{ border: 1px solid skyblue;
+    width: 30px;
+    height: 30px;
+    background-color: skyblue;
+    
+}
+.green
+{ border: 1px solid green;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    
+}
+.colors
+{
+    padding: 3% 2%;
+}

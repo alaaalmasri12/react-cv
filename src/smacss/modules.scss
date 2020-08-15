@@ -1,0 +1,75 @@
+@import './base.scss';
+
+.main-navbar li
+{
+padding: 10px;
+color: $main-color;
+position: relative; 
+text-transform: uppercase;
+font-size: $nav-font-size;
+}
+.user-hero-image img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.cv-username h1 {
+    font-weight: 700;
+    font-size: 40px;
+    padding-top: 2%;
+}
+
+.user-job-position h5 {
+position: relative;
+    letter-spacing: 1px;
+    padding-top: 1%;
+    font-weight: 400px;
+    font-size: 16px;
+}
+.social-media ul {
+    list-style-type: none;
+    text-align: left;
+    padding-top: 2%;
+    width: 23%;
+    margin: 0 auto;
+    li
+    {
+        display: inline-block;
+        border: 2px solid #ffffff;
+        width: 50px;
+        padding: 10px;
+        margin-left: 6%;
+        text-align: center;
+        transition: 0.3s ease-in;
+        height: 50px;
+        border-radius: 50%;
+    }
+     i
+     {
+         color: #ffffff;
+        font-size: 25px;
+     }
+}
+.background-options-box p {
+    transform: rotate(270deg);
+    letter-spacing: 1px;
+    position: relative;
+    top: 40px;
+    cursor: pointer;
+}
+.colors h5
+{
+    color: darkgray;
+    font-size: 12px;
+}
+.colors ul
+{
+    padding: 0;
+    list-style-type: none;
+}
+.colors ul li
+{
+    display: inline-block;
+    padding: 5px;
+}
