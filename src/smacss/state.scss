@@ -49,6 +49,16 @@ animation: spinning 0.8s ease-in;
     animation: spinning 0.8s ease-in;
 
 }
+.card a:hover
+{
+    background-color:#ffffff;
+    color: $social-media-color-first;
+}
+.card-img:hover
+{
+    
+    transform: scale(1.1);
+}
 @keyframes spinning {
     from {
       transform: rotate(0deg);

@@ -11,7 +11,7 @@ describe('<Hero />', ()=> {
 
     it('changes state on click', ()=> {
         let app = mount(<Hero />);
-        let button = app.find('input');
+        let button = app.find('#re');
         button.simulate('click');
         expect(app.state('color')).toBeTruthy();
     });

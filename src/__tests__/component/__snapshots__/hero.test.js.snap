@@ -1,0 +1,246 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hero /> renders correctly 1`] = `
+<section
+  className="hero-background"
+  style={
+    Object {
+      "background": "linear-gradient(rgba(0, 0, 0,0), #9198e5),url(hero2.jpg)",
+    }
+  }
+>
+  <div
+    className="background-options-box"
+  >
+    <p
+      onClick={[Function]}
+    >
+      Options
+    </p>
+  </div>
+  <div
+    className="react-reveal"
+    id="sidenav"
+    style={
+      Object {
+        "opacity": 0,
+      }
+    }
+  >
+    <div
+      className="colors"
+    >
+      <h5>
+        COLOR VARIANT
+      </h5>
+      <form
+        className=""
+      >
+        <ul>
+          <li>
+            <input
+              className="red"
+              id="re"
+              name="color"
+              onClick={[Function]}
+              type="radio"
+              value="rgb(255,0,0,0.8)"
+            />
+          </li>
+          <li>
+            <div
+              className="pruple color form-check"
+            >
+              <input
+                className="form-check-input position-static"
+                disabled={false}
+                name="color"
+                onClick={[Function]}
+                type="radio"
+                value="rgb(148,0,211,0.8)"
+              />
+            </div>
+          </li>
+          <li>
+            <div
+              className="skyblue color form-check"
+            >
+              <input
+                className="form-check-input position-static"
+                disabled={false}
+                name="color"
+                onClick={[Function]}
+                type="radio"
+                value="rgba(52.9% , 80.8% ,92.2%,0.5) "
+              />
+            </div>
+          </li>
+          <li>
+            <div
+              className="green color form-check"
+            >
+              <input
+                className="form-check-input position-static"
+                disabled={false}
+                name="color"
+                onClick={[Function]}
+                type="radio"
+                value="rgb(0,225,0,0.8)"
+              />
+            </div>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+  <div
+    className="main-navbar"
+  >
+    <div
+      className="container"
+    >
+      <nav
+        className="navbar navbar-expand navbar-light"
+      >
+        <div
+          className="m-auto navbar-nav"
+          onKeyDown={[Function]}
+        >
+          <a
+            className="nav-link"
+            data-rb-event-key="#home"
+            href="#home"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <li>
+              <i
+                className="fa fa-home"
+              />
+            </li>
+          </a>
+          <a
+            className="nav-link"
+            data-rb-event-key="#features"
+            href="#features"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <li>
+              Portfolio
+            </li>
+          </a>
+          <a
+            className="nav-link"
+            data-rb-event-key="#pricing"
+            href="#pricing"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <li>
+              Reviews
+            </li>
+          </a>
+          <a
+            className="nav-link"
+            data-rb-event-key="#pricing"
+            href="#pricing"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <li>
+              About
+            </li>
+          </a>
+          <a
+            className="nav-link"
+            data-rb-event-key="#pricing"
+            href="#pricing"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <li>
+              Services
+            </li>
+          </a>
+          <a
+            className="nav-link"
+            data-rb-event-key="#pricing"
+            href="#pricing"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <li>
+              Contact
+            </li>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div
+    id="cv-user-section"
+  >
+    <div
+      className="user-hero-image"
+    >
+      <img
+        alt="user-image"
+        src="alaa.png"
+      />
+    </div>
+    <div
+      className="cv-username"
+    >
+      <h1>
+        Ala'a Almasri
+      </h1>
+    </div>
+    <div
+      className="user-job-position"
+    >
+      <h5>
+        Fullstack Softwre Developer
+      </h5>
+    </div>
+    <div
+      className="social-media"
+    >
+      <ul>
+        <li>
+          <a
+            href="https://github.com/alaaalmasri12"
+            target="_blank"
+          >
+             
+            <i
+              class="fab fa-github"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/alaa-masri/"
+            target="_blank"
+          >
+            <i
+              class="fab fa-linkedin"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.hackerrank.com/alaaalmasri272"
+            target="_blank"
+          >
+              
+            <i
+              class="fab fa-hackerrank"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+`;
