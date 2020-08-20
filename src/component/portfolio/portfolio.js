@@ -1,8 +1,9 @@
-import React from 'react';
+import React,{ useContext } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Link } from 'react-router-dom';
 import Slide from 'react-reveal/Slide';
 import { Row, Col, Container, Card, Button, Modal } from 'react-bootstrap';
+
 class Portolio extends React.Component {
     constructor(props) {
         super(props);
@@ -11,23 +12,21 @@ class Portolio extends React.Component {
             show2: true,
         }
     }
-    handleShow = (e) => {
-        this.setState({ show: !this.state.show })
-    }
-    handleClose = (e) => {
-        this.setState({ show: !this.state.show })
-    }
+ 
     handelrender = (e) => {
         this.setState({ show2: false })
-
+    }
+    componentDidMount(){
+        
+        this.setState({show2:true});
     }
     render() {
         return (
             <React.Fragment>
-                <div className="portfolio-box">
+                <div className="portfolio-box" id="Portfolio">
                     <Container>
                         <div className="toggle">
-                            {this.state.show2 === true ? <Link to='/'><Button id="Projects">Projects</Button></Link> : <Link to='/projects'><Button id="Projects">Projects</Button></Link>}
+                            {this.state.show2 === true  ? <Link to='/'><Button id="Projects">Projects</Button></Link> : <Link to='/projects'><Button id="Projects">Projects</Button></Link>}
                             <Link to="/videos"><Button id="Gallery" onClick={this.handelrender}>Video Gallery</Button></Link>
                         </div>
                         <div className="projects">
@@ -62,7 +61,6 @@ class Portolio extends React.Component {
                                     }
                                 </Route>
                                     : <Route path='/projects'>
-
                                         {Object.keys(this.props.results).map((key, idx) => {
                                             return (
                                                 <Col xs={6} sm={6} md={4}>

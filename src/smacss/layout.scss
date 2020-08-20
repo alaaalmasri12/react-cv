@@ -1,3 +1,4 @@
+@import './base.scss';
 #cv-user-section
 {
     text-align: center;
@@ -12,6 +13,7 @@
     background-color: #ffffff;
     display: none;
     border: 1px solid green;
+    z-index: 99999999999;
     transition: 0.3s ease;
 }
 .sidenav-expand
@@ -78,7 +80,48 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 450px;
     display: block;
-    
+}
+#Job-description
+{
+    text-align: center;
+    padding-top:5%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 300px;
+    span
+    {
+        font-size: 25px;
+    margin: 1%;
+    }
+}
+#pitch {
+    margin: 5% 8%;
+    color: #000;
+}
+.jop-position
+{
+    text-align: center;
+}
+.skill
+{
+    margin-bottom: 8%;
+    i
+    {
+        font-size: 55px;
+        color: green;
+    }
+}
+#skills
+{
+        margin-top: 3%;
+}
+.navbar-expand .navbar-nav {
+    justify-content: center;
+}
+.carousel-caption
+{
+    z-index: 0 !important;
 }

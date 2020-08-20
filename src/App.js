@@ -7,28 +7,45 @@ import './smacss/state.scss';
 import './smacss/theme.scss';
 import Portfolio from '../src/component/portfolio/portfolio';
 import Testmonial from '../src/component/testmonials/testmonials';
+import ThemeContext from './component/context/theme';
+import Job from './component/Job/job';
+import Pitch from './component/pitch/pitch';
 function App() {
 
   const [portfolio,setPortfolio]=useState([]);
+  const [reviews,setReview]=useState([]);
   useEffect(() => {
     async function  display()
     {
-      let raw = await fetch('https://alaacv-backend.herokuapp.com/api/v1/portfolio/');
+      let raw = await fetch('https://alaacv-backend.herokuapp.com/portfolio');
       let data = await raw.json();
-      
       setPortfolio(data);
+      
+
   }
   display();
+  },[]);
+  useEffect(() => {
+    async function  display2()
+    {
+      let raw2 = await fetch('https://alaacv-backend.herokuapp.com/review');
+      let data2=await raw2.json();
+      setReview(data2);
+  }
+  display2();
   },[]);
 
   return (
     
    <React.Fragment>
     
-
+    <ThemeContext>
      <Hero results={portfolio} />
      <Portfolio results={portfolio} />
-     <Testmonial flag={true} />
+     <Testmonial results={reviews} />
+     <Pitch/>
+     <Job />
+     </ThemeContext>
    </React.Fragment>
   );
 }

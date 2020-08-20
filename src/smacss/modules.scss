@@ -148,3 +148,78 @@ input[type=checkbox], input[type=radio] {
 {
     margin-bottom: 3%;
 }
+.w-100 {
+    width: 150px !important;
+    height: 150px;
+    border-radius: 50%;
+    margin: 2% auto 12%;
+}
+#pitch 
+{
+    h3
+    {
+        color: #f5a623;
+        font-weight: bold;    }
+    
+  p
+  {
+    line-height: 30px;
+    font-size: 15px;
+  }
+  i
+  {
+      padding-right: 3%;
+  }
+}
+.jop-position h5 {
+    padding-top: 5%;
+    font-size: 17px;
+    text-align: center;
+    color: dimgray;
+    width: 90%;
+}
+
+.compeny-location ul
+{
+    list-style-type: none;
+    li
+    {
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 10px;
+        width: 80%;
+        text-align: left;
+        color:gray
+    }
+    span
+    {
+        padding-left: 7px;
+    }
+   
+}
+.education 
+{
+    h5{
+        padding-top: 5%;
+        font-size: 17px;
+        text-align: left;
+        color: dimgray;
+        width: 90%;
+    }
+    ul
+    {
+        list-style-type: none;
+        padding: 0;
+    }
+    li
+    {
+        padding: 10px;
+    font-size: 10px;
+    width: 100%;
+    color: gray;
+    }
+    span
+  {
+    padding-left: 4px;
+  }
+}
