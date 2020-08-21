@@ -3,7 +3,7 @@ $(document).ready(function () {
 	scrolllink.click(function (e) {
 		e.preventDefault();
 		$('body,html').animate({
-			scrollTop: $(this.hash).offset().top-200
+			scrollTop: $(this.hash).offset().top
 		}, 1000)
 	})
 
@@ -26,14 +26,14 @@ $(document).ready(function () {
 
 	function hideNav() {
 
-		$(".navbar-nav").removeClass("scrolling");
-		$(".navbar-nav").removeClass('hide');
+		$(".main-navbar").removeClass("scrolling");
+		$(".main-navbar").removeClass('hide');
 	}
 
 	function showNav() {
-		$(".navbar-nav").removeClass('hide');
+		$(".main-navbar").removeClass('hide');
 
-		$(".navbar-nav").addClass("scrolling");
+		$(".main-navbar").addClass("scrolling");
 	}
 
 });

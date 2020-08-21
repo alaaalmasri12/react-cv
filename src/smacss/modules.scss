@@ -223,3 +223,46 @@ input[type=checkbox], input[type=radio] {
     padding-left: 4px;
   }
 }
+#Feedback
+{
+    h5,span
+    {
+        color: #000000;
+        font-weight: bold;
+    }
+    i
+    {
+        font-size: 35px;
+        padding-right: 2%;
+        color: #f5a623;
+    }
+    button
+    {
+        background-color: #f5a623;
+        border-color: #f5a623 ;
+        border-radius: 0px;
+
+    }
+}
+.feedback-submision {
+    button
+    {
+        background-color: green;
+        border-color: green ; 
+        width: 30%; 
+    }
+}
+.modal-title {
+    color: #fff;
+    margin-left: 40%;
+    font-size: 19px;
+    text-align: center;
+}
+.mail,.phone,.home
+{
+    margin-top: 12%;
+i
+{
+    font-size: 35px;
+}
+}

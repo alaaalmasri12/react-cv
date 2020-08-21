@@ -19,11 +19,9 @@ const Testmonial = (props) => {
                                     <h5>{props.results[key].review}</h5>
                                     <p>{props.results[key].name}</p>
                                 </Carousel.Caption>
-
                             </Carousel.Item>
                         )
                     })
-
                     }
                 </Carousel>
 

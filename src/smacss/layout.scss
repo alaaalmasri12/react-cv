@@ -125,3 +125,59 @@
 {
     z-index: 0 !important;
 }
+#Feedback {
+    text-align: center;
+    margin-top: 5%;
+}
+.feedback-btn
+{
+    margin-top: 3%;
+}
+.MuiFormControl-root
+{
+    width: 100%;
+    margin-bottom: 4%;
+}
+.feedback-submision {
+    margin: 15% auto;
+    width: 100%;
+    text-align: center;
+}
+#Contact
+{
+    padding-top:5%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+
+    margin-top: 5%;
+    .MuiFormControl-root
+{
+    width: 40% !important;
+    margin: 2% 0% 2% 6%;
+}
+i
+{
+    margin-bottom: 8%;
+}
+p
+{
+    letter-spacing: 2px;
+}
+
+.information
+{
+    text-align: center;
+}
+.MuiFormLabel-root
+{
+    color: #fff;
+}
+}
+
+.send-msg-btn {
+    text-align: center;
+    margin: 4% 0px 0px 0px;
+    padding-bottom: 5%;
+}

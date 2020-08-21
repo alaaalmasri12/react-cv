@@ -14,8 +14,6 @@ class Theme extends React.Component {
         for (i = 0; i < divs.length; ++i) {
             divs[i].addEventListener('click', this.toglemode);
         }
-       
-
     }
     toglemode = (e) =>{
         let color = e.target.value;
