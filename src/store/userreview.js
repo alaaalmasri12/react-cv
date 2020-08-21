@@ -8,6 +8,16 @@ let inintialstate = {
         }
     ]
 }
+var   config = {
+    mode: 'cors',
+    cache: 'no-cache',
+    credentials: 'same-origin',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    redirect: 'follow',
+    referrerPolicy: 'no-referrer',
+}
 //reducer
 export default (state = inintialstate, action) => {
     let { type, payload } = action;
@@ -15,15 +25,16 @@ export default (state = inintialstate, action) => {
     switch (type) {
 
         case 'addreivew':
+            
             async function getPost(e) {
-                const response = axios.post(`${API}/review`, payload);
+                const response = axios.post(`${API}/review`, payload,config);
                 await response;
             }
 
             getPost();
         case 'contact':
             async function contact(obj) {
-                const response = axios.post(`${API}/contact`,payload);
+                const response = axios.post(`${API}/contact`,payload,config);
                 await response;
             }
             contact();

@@ -22,7 +22,6 @@ function App(props) {
       let data = await raw.json();
       setPortfolio(data);
 
-
     }
     display();
   }, []);

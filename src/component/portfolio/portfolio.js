@@ -29,6 +29,8 @@ class Portolio extends React.Component {
                             {this.state.show2 === true  ? <Link to='/'><Button id="Projects">Projects</Button></Link> : <Link to='/projects'><Button id="Projects">Projects</Button></Link>}
                             <Link to="/videos"><Button id="Gallery" onClick={this.handelrender}>Video Gallery</Button></Link>
                         </div>
+                        {console.log(this.props.results)}
+
                         <div className="projects">
 
                             <Row>
