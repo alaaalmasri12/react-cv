@@ -10,15 +10,16 @@ const Swal = require('sweetalert2')
 const Contact = (props) => {
 
     const [contact, setContact] = useState({
+        name:'',
 
     });
 
     const hundlesubmit = async (e) => {
-        setContact({ [e.target.name]: e.target.value });
         e.preventDefault();
+        setContact({ [e.target.name]: e.target.value });
+        console.log(contact);
         await props.contact(contact);
         
-        console.log(contact);
         Swal.fire({
             position: 'top-center',
             icon: 'success',
@@ -31,6 +32,7 @@ const Contact = (props) => {
     
     const setdata = (e) => {
         setContact({ ...contact, [e.target.name]: e.target.value });
+        console.log(contact);
     }
     const themeContext = useContext(ThemeContext);
     return (
@@ -66,7 +68,7 @@ const Contact = (props) => {
                 </Container>
             </div>
             <div className="contact">
-                <form onSubmit={hundlesubmit} method="POST" id="form">
+                <form action="/contact" onSubmit={hundlesubmit} method="POST" id="form">
                     <TextField type="text" placeholder="your first name" id="standard-basic" label="First Name" name="firstname" onChange={setdata} />
                     <TextField id="standard-basic" label="Last Name" type="text" placeholder="your Last name" name="lastname" onChange={setdata} />
                     <br />

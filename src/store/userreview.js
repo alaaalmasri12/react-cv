@@ -21,7 +21,7 @@ var   config = {
 //reducer
 export default (state = inintialstate, action) => {
     let { type, payload } = action;
-    const API = "https://alaacv-backend.herokuapp.com"
+    const API = "http://localhost:4000"
     switch (type) {
 
         case 'addreivew':

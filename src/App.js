@@ -18,7 +18,7 @@ function App(props) {
   const [reviews, setReview] = useState([]);
   useEffect(() => {
     async function display() {
-      let raw = await fetch('https://alaacv-backend.herokuapp.com/portfolio');
+      let raw = await fetch('http://localhost:4000/portfolio/portfolio');
       let data = await raw.json();
       setPortfolio(data);
 
@@ -27,7 +27,7 @@ function App(props) {
   }, []);
   useEffect(() => {
     async function display2() {
-      let raw2 = await fetch('https://alaacv-backend.herokuapp.com/portfolio');
+      let raw2 = await fetch('http://localhost:4000/portfolio/review');
       let data2 = await raw2.json();
       setReview(data2);
     }
