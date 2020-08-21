@@ -18,7 +18,7 @@ var   config = {
     redirect: 'follow',
     referrerPolicy: 'no-referrer',
 }
-//reducer
+///reducer
 export default (state = inintialstate, action) => {
     let { type, payload } = action;
     const API = "https://alaacv-backend.herokuapp.com"
