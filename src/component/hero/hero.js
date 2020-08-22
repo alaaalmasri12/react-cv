@@ -9,7 +9,7 @@ import { ThemeContext } from '../context/theme';
 class Hero extends React.Component {
     constructor(props) {
         super(props);
-        this.state = ({ show: false });
+        this.state = ({ show: false,show2:false });
     }
 
     navhandlerClick = (e) => {
@@ -19,10 +19,10 @@ class Hero extends React.Component {
         document.querySelector(".background-options-box").classList.toggle('sidenav-expand-left');
     }
     handleClose = (e) => {
-        this.setState({ show:false });
+        this.setState({ show2:false });
     }
     handleShow = (e) => {
-        this.setState({ show:true });
+        this.setState({ show2:true });
     }
 
 
@@ -84,7 +84,7 @@ class Hero extends React.Component {
                                         </Nav>
                                     </Navbar.Collapse>
                                 </Navbar>
-                                <Modal show={this.state.show} onHide={this.handleClose}>
+                                <Modal show={this.state.show2} onHide={this.handleClose}>
         <Modal.Header closeButton>
           <Modal.Title style={{textAlign:'center',color:'#000'}}>Questions</Modal.Title>
         </Modal.Header>
