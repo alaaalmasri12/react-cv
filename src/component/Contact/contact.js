@@ -9,15 +9,12 @@ import { ThemeContext } from '../context/theme';
 const Swal = require('sweetalert2')
 const Contact = (props) => {
 
-    const [contact, setContact] = useState({
-        name:'',
-
-    });
+    const [contact, setContact] = useState({});
 
     const hundlesubmit = async (e) => {
-        e.preventDefault();
         setContact({ [e.target.name]: e.target.value });
         console.log(contact);
+        e.preventDefault();
         await props.contact(contact);
         
         Swal.fire({
@@ -68,14 +65,14 @@ const Contact = (props) => {
                 </Container>
             </div>
             <div className="contact">
-                <form action="/contact" onSubmit={hundlesubmit} method="POST" id="form">
-                    <TextField type="text" placeholder="your first name" id="standard-basic" label="First Name" name="firstname" onChange={setdata} />
-                    <TextField id="standard-basic" label="Last Name" type="text" placeholder="your Last name" name="lastname" onChange={setdata} />
+                <form  action='/contact' method="POST"onSubmit={hundlesubmit}  id="form">
+                    <TextField type="text" placeholder="your first name" label="First Name" name="firstname" onChange={setdata} />
+                    <TextField  label="Last Name" type="text" placeholder="your Last name" name="lastname" onChange={setdata} />
                     <br />
-                    <TextField id="standard-basic" label="Email" type="email" placeholder="Your e-mail" name="email" onChange={setdata} />
-                    <TextField id="standard-basic" label="Phone" type="tel" placeholder="Your Phone" name="phone" onChange={setdata} />
+                    <TextField label="Email" type="email" placeholder="Your e-mail" name="email" onChange={setdata} />
+                    <TextField  label="Phone" type="tel" placeholder="Your Phone" name="phone" onChange={setdata} />
                     <br />
-                    <TextField id="standard-basic" className="message" label="Message" name="message" rows="3" placeholder="Message" onChange={setdata} />
+                    <TextField  className="message" label="Message" name="message" rows="3" placeholder="Message" onChange={setdata} />
                     <br />
                     <div className='send-msg-btn'>
                         <Button type="submit" class="contact-btn">Send Message</Button>

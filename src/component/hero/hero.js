@@ -6,7 +6,6 @@ import background from '../../assets/images/hero2.jpg';
 import Fade from 'react-reveal/Fade';
 import { Container, Form, Nav, Navbar } from 'react-bootstrap';
 import { ThemeContext } from '../context/theme';
-
 class Hero extends React.Component {
     constructor(props) {
         super(props);
@@ -23,7 +22,7 @@ class Hero extends React.Component {
         return (
             <ThemeContext.Consumer>
                    {themeContext => (
-            <section id="home" className="hero-background"  style={{ background: `linear-gradient(${themeContext.mode}, #9198e5),url(${background})` }}>
+            <section id="home" className="hero-background" style={{ background: `linear-gradient(${themeContext.mode}, #9198e5),url(${background})` }}>
                 <div className="background-options-box">
                     <p onClick={this.navhandlerClick}>Options</p>
                 </div>
@@ -59,16 +58,16 @@ class Hero extends React.Component {
                         </div>
                     </div>
                 </Fade>
-                <div className="main-navbar" style={{ backgroundColor: `${themeContext.mode}` }} >
+                <div className="main-navbar" style={{ backgroundColor: `${themeContext.mode}` }}>
                     <Container>
-                        <Navbar  >
-                            <Nav className="m-auto"    >
+                        <Navbar style={{ backgroundColor: `${themeContext.mode}` }}>
+                            <Nav className="m-auto" >
                                 <Nav.Link className="scroll" href="#home" style={{ color: `${this.state.color}` }}><li><i className="fa fa-home"></i></li></Nav.Link>
-                                <Nav.Link className="scroll" href="#Portfolio"><li>Portfolio</li></Nav.Link>
+                                <Nav.Link className="scroll" href="#Portfolio"><li id="Portfolio">Portfolio</li></Nav.Link>
                                 <Nav.Link className="scroll" href="#testomnials"><li>Reviews</li></Nav.Link>
                                 <Nav.Link  className="scroll" href="#pitch"><li>About</li></Nav.Link>
                                 <Nav.Link  className="scroll"  href="#Job-description"><li>Skills</li></Nav.Link>
-                                <Nav.Link className="scroll"  href="#pricing"><li>Contact</li></Nav.Link>
+                                <Nav.Link className="scroll"  href="#Contact"><li>Contact</li></Nav.Link>
                             </Nav>
                         </Navbar>
                     </Container>
