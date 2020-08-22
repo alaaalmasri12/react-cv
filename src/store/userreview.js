@@ -9,7 +9,7 @@ let inintialstate = {
     ]
 }
 var   config = {
-    mode: 'cors',
+    mode: 'no-cors',
     cache: 'no-cache',
     credentials: 'same-origin',
     headers: {
@@ -27,14 +27,14 @@ export default (state = inintialstate, action) => {
         case 'addreivew':
             
             async function getPost(e) {
-                const response = axios.post(`${API}/review`, payload);
+                const response = axios.post(`${API}/review`, payload,config);
                 await response;
             }
 
             getPost();
         case 'contact':
             async function contact(obj) {
-                const response = axios.post(`${API}/contact`,payload);
+                const response = axios.post(`${API}/contact`,payload,config);
                 await response;
             }
             contact();
