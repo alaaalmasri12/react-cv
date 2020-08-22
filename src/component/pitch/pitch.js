@@ -5,7 +5,7 @@ const Pitch = (props) => {
         <div id="pitch">
             <Container>
                 <Row>
-                    <Col xs={6} sm={6} md={4}>
+                    <Col xs={12} sm={12} md={4}>
                         <div id="About-me">
                             <h3><i class="fas fa-user"></i>About me</h3>
                             <p>
@@ -15,7 +15,7 @@ const Pitch = (props) => {
                 </p>
                         </div>
                     </Col>
-                    <Col xs={6} sm={6} md={4}>
+                    <Col xs={12} sm={12} md={4}>
                         <div className="jop-position">
                             <h3><i class="fas fa-building"></i>Internship</h3>
                             <h5>Drupal Developer</h5>
@@ -27,9 +27,10 @@ const Pitch = (props) => {
                             </div>
                         </div>
                     </Col>
-                    <Col xs={6} sm={6} md={4}>
+                    <Col xs={12} sm={12} md={4}>
+                    <div className="education">
+
                         <h3><i class="fas fa-graduation-cap"></i>Education</h3>
-                        <div className="education">
 
                             <h5>Advanced Software Development</h5>
                             <ul>

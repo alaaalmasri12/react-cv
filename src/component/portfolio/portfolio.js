@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Link } from 'react-router-dom';
 import Slide from 'react-reveal/Slide';
 import { Row, Col, Container, Card, Button, Modal } from 'react-bootstrap';
-
 class Portolio extends React.Component {
     constructor(props) {
         super(props);
@@ -12,12 +11,10 @@ class Portolio extends React.Component {
             show2: true,
         }
     }
- 
     handelrender = (e) => {
         this.setState({ show2: false })
     }
-    componentDidMount(){
-        
+    componentDidMount(){        
         this.setState({show2:true});
     }
     render() {
@@ -38,7 +35,7 @@ class Portolio extends React.Component {
 
                                     {Object.keys(this.props.results).map((key, idx) => {
                                         return (
-                                            <Col xs={6} sm={6} md={4}>
+                                            <Col xs={12} sm={12} md={4}>
                                                 <Slide top>
                                                     <Card style={{ width: '17rem', height: '380px' }}>
                                                         <Card.Img onClick={this.handleShow} src={this.props.results[key].image} />
@@ -65,7 +62,7 @@ class Portolio extends React.Component {
                                     : <Route path='/projects'>
                                         {Object.keys(this.props.results).map((key, idx) => {
                                             return (
-                                                <Col xs={6} sm={6} md={4}>
+                                                <Col xs={12} sm={12} md={4}>
                                                     <Slide top>
                                                         <Card style={{ width: '17rem', height: '380px' }}>
                                                             <Card.Img onClick={this.handleShow} src={this.props.results[key].image} />
@@ -79,7 +76,6 @@ class Portolio extends React.Component {
                                                                 </div>
                                                             </Card.Body>
                                                         </Card>
-
                                                     </Slide>
                                                 </Col>
 
@@ -99,7 +95,7 @@ class Portolio extends React.Component {
 
                                     {Object.keys(this.props.results).map((key, idx) => {
                                         return (
-                                            <Col xs={6} sm={6} md={6}>
+                                            <Col xs={12} sm={12} md={6}>
                                                 <Slide top>
 
                                                     <div className="video">

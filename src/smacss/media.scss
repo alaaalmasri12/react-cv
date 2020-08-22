@@ -1,0 +1,95 @@
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .projects
+    {
+        width: 90%;
+            margin: 0 auto;
+    }
+    .card {
+        margin-bottom: 6%;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    } 
+    #Job-description
+    {
+        height: 620px;
+    }
+    .hero-background
+    {
+        height: 600px;
+    }
+    .social-media ul
+    {
+        padding-top: 5%;
+    }
+    .main-navbar li:hover::after {
+        width: 18%;
+        background: #ffffff;
+    }
+    .main-navbar li::after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        bottom: -4px;
+        left: 9px;
+        right: 0;
+        width: 10%;
+        transition: .5s;
+    }
+    #Contact .MuiFormControl-root {
+        width: 50% !important;
+        margin: 2% 0% 2% 26%;
+    }
+    .scroll
+    {
+        position: none !important;
+    }
+    .jop-position {
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .carousel-caption
+    {
+        bottom: 0;
+        h5
+        {
+            font-size: 13px; 
+        }
+    }
+    .education
+    {
+        text-align: center;
+        h5{
+            text-align: center;
+        }
+    }
+
+    .w-100
+    {
+        margin: 2% auto 19%;
+    }
+    #About-me
+    {
+        text-align: center;
+    }
+    .compeny-location ul li {
+        font-size: 10px;
+        width: 55%;;
+    }
+    .social-media
+    {
+        ul
+        {
+            li
+            {
+                margin-bottom: 20%;
+                        }
+        }
+    }
+    
+  }

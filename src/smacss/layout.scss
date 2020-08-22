@@ -68,8 +68,8 @@
 }
 .card
 {
-    margin-bottom: 4%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 0% auto 5%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 }
 .toggle
@@ -112,12 +112,17 @@
     i
     {
         font-size: 55px;
-        color: green;
     }
 }
 #skills
 {
         margin-top: 3%;
+}
+#form
+{
+    border: 1px solid;
+    width: 80%;
+    margin: 6% auto 0%;
 }
 .navbar-expand .navbar-nav {
     justify-content: center;

@@ -39,21 +39,21 @@ const Contact = (props) => {
                 <p>Just Drop A Message Below And I'll Get in Touch</p>
                 <Container>
                     <Row>
-                        <Col xs={6} sm={6} md={4}>
+                        <Col xs={12} sm={12} md={4}>
                             <div className="mail">
                                 <i class="fas fa-envelope"></i>
                                 <h5>Qureis</h5>
                                 <p>Alaaalmasri272@gmail.com</p>
                             </div>
                         </Col>
-                        <Col xs={6} sm={6} md={4}>
+                        <Col xs={12} sm={12} md={4}>
                             <div className="phone">
                                 <i class="fa fa-mobile" aria-hidden="true"></i>
                                 <h5>Call me</h5>
                                 <p>+96782233721</p>
                             </div>
                         </Col>
-                        <Col xs={6} sm={6} md={4}>
+                        <Col xs={12} sm={12} md={4}>
                             <div className="home">
                                 <i class="fa fa-home" aria-hidden="true"></i>
                                 <h5>Location</h5>
@@ -78,6 +78,7 @@ const Contact = (props) => {
                         <Button type="submit" class="contact-btn">Send Message</Button>
                     </div>
                 </form>
+                <br />
             </div>
 
         </div>

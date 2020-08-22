@@ -12,39 +12,39 @@ const Job = (props) => {
                 <div id="skills">
                     <Container>
                         <Row>
-                            <Col xs={6} sm={6} md={4}>
+                            <Col xs={12} sm={12} md={4}>
                                 <div className="skill" >
-                                    <i class="fab fa-html5" style={{ color: themeContext.mode }}></i>
+                                    <i class="fab fa-html5" ></i>
                                 </div>
                             </Col>
-                            <Col xs={6} sm={6} md={4}>
+                            <Col xs={12} sm={12} md={4}>
                                 <div className="skill" >
-                                    <i class="fab fa-css3-alt" style={{ color: themeContext.mode }}></i>
+                                    <i class="fab fa-css3-alt"></i>
                                 </div>
                             </Col>
-                            <Col xs={6} sm={6} md={4}>
+                            <Col xs={12} sm={12} md={4}>
                                 <div className="skill" >
 
-                                    <i class="fab fa-js-square" style={{ color: themeContext.mode }}></i>
+                                    <i class="fab fa-js-square"></i>
                                 </div>
                             </Col>
-                            <Col xs={6} sm={6} md={4}>
+                            <Col xs={12} sm={12} md={4}>
                                 <div className="skill" >
-                                <i class="fab fa-react" style={{ color: themeContext.mode }}></i>
+                                <i class="fab fa-react" ></i>
                                 </div>
 
                             </Col>
                             
-                            <Col xs={6} sm={6} md={4}>
+                            <Col xs={12} sm={12} md={4}>
                                 <div className="skill">
-                                    <i class="fab fa-node-js" style={{ color: themeContext.mode }}></i>
+                                    <i class="fab fa-node-js" ></i>
                                 </div>
 
                             </Col>
-                            <Col xs={6} sm={6} md={4}>
+                            <Col xs={12} sm={12} md={4}>
                                 <div className="skill">
-                                <i class="fas fa-code"style={{ color: themeContext.mode }}></i>
-                                </div>
+                                <i class="fab fa-php"></i>
+                                                      </div>
 
                             </Col>
                         </Row>

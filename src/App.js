@@ -5,6 +5,7 @@ import './smacss/layout.scss';
 import './smacss/modules.scss';
 import './smacss/state.scss';
 import './smacss/theme.scss';
+import './smacss/media.scss';
 import AlanBtn from '@alan-ai/alan-sdk-web';
 import Portfolio from '../src/component/portfolio/portfolio';
 import Testmonial from '../src/component/testmonials/testmonials';
