@@ -27,14 +27,14 @@ export default (state = inintialstate, action) => {
         case 'addreivew':
             
             async function getPost(e) {
-                const response = axios.post(`${API}/review`, payload,config);
+                const response = axios.post(`${API}/review`, payload);
                 await response;
             }
 
             getPost();
         case 'contact':
             async function contact(obj) {
-                const response = axios.post(`${API}/contact`,payload,config);
+                const response = axios.post(`${API}/contact`,payload);
                 await response;
             }
             contact();
