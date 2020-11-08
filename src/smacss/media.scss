@@ -1,7 +1,4 @@
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-    
-}
+
 @media (min-width: 481px) and (max-width: 767px) {
   
     .projects
@@ -72,6 +69,135 @@
     .w-100
     {
         margin: 2% auto 19%;
+    }
+    #About-me
+    {
+        text-align: center;
+    }
+    .compeny-location ul li {
+        font-size: 10px;
+        width: 55%;;
+    }
+    .social-media
+    {
+        ul
+        {
+            li
+            {
+                margin-bottom: 20%;
+                        }
+        }
+    }
+    
+  }
+  
+@media (min-width: 375px)  and  (max-width: 480px) {
+    #projects
+{
+    width: 100%;
+    display: inline-block;
+    padding: 6px;
+}
+.hero-background {
+    height: 540px !important;
+}
+#Gallery
+{
+    width: 100%;
+    display: inline-block;
+    padding: 6px;
+    margin: 6px;
+}
+.colors h5
+{
+    display: none;
+}
+#sidenav {
+    position: fixed;
+    top: 30%;
+    height: 214px;
+    z-index: 1;
+    width: 16%;
+    background-color: #ffffff;
+    display: none;
+    border: 1px solid green;
+    z-index: 99999999999;
+    transition: 0.3s ease;
+}
+
+  .card
+  {
+    width: 14rem !important;
+    height: 380px;
+    margin-bottom: 10% !important;
+  }
+    .projects
+    {
+        width: 90%;
+            margin: 0 auto;
+    }
+    .card {
+        margin-bottom: 6%;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    } 
+    #Job-description
+    {
+        height: 620px;
+    }
+    .hero-background
+    {
+        height: 600px;
+    }
+    .social-media ul
+    {
+        padding-top: 5%;
+    }
+    .main-navbar li:hover::after {
+        width: 18%;
+        background: #ffffff;
+    }
+    .main-navbar li::after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        bottom: -4px;
+        left: 9px;
+        right: 0;
+        width: 10%;
+        transition: .5s;
+    }
+    #Contact .MuiFormControl-root {
+        width: 50% !important;
+        margin: 2% 0% 2% 26%;
+    }
+    .scroll
+    {
+        position: none !important;
+    }
+    .jop-position {
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .carousel-caption
+    {
+        bottom: 0;
+        h5
+        {
+            font-size: 13px; 
+        }
+    }
+    .education
+    {
+        text-align: center;
+        h5{
+            text-align: center;
+        }
+    }
+
+    .w-100 {
+        margin: 2% auto 31%;
     }
     #About-me
     {
